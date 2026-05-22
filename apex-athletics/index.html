@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Athletics</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <h1>Apex Athletics</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Men</a></li>
+        <li><a href="#">Women</a></li>
+        <li><a href="#">Gear/Equipment</a></li>
+        <li><a href="#">Sale</a></li>
+      </ul>
+      <input type="text" name="" placeholder="Search Bar" />
+      <div id="cart-icon" class="cart-icon" style="cursor: pointer">
+        🛒 Cart (<span id="cart-count">0</span>)
+      </div>
+    </nav>
+
+    <div id="cart-sidebar" class="cart-sidebar">
+      <div class="sidebar-header">
+        <h2>Your Cart</h2>
+        <button id="close-cart" class="close-btn">&times;</button>
+      </div>
+      <div class="sidebar-content">
+        <p id="empty-cart-msg">Your cart is currently empty.</p>
+        <ul id="cart-items-list" style="list-style: none; padding: 0"></ul>
+      </div>
+
+      <div class="sidebar-footer">
+        <button class="checkout-btn">Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <header class="hero-section">
+      <h1>UNLEASH YOUR POTENTIAL</h1>
+      <h2>Unleash Your Peak Performance</h2>
+      <p>
+        Equipping athletes with next-generation gear to break boundaries and
+        crush goals.
+      </p>
+      <button>Shop Now !</button>
+    </header>
+
+    <main>
+      <section class="category-section">
+        <h2>Shop by Sport</h2>
+        <div class="category-container">
+          <div class="basketball"><h3>Basketball</h3></div>
+          <div class="football"><h3>Football</h3></div>
+          <div class="baseball"><h3>Baseball</h3></div>
+          <div class="volleyball"><h3>Volleyball</h3></div>
+        </div>
+      </section>
+      <section class="product-grid">
+        <h2>Featured Products</h2>
+        <div class="grid-container">
+          <div class="product-card">
+            <img
+              src="https://picsum.photos/200"
+              alt="Apex Flight Basketball Shoes"
+            />
+            <h4>Apex Flight Basketball Shoes</h4>
+            <p>Price Tag : $1,200</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://picsum.photos/200?random=1"
+              alt="Apex Striker Football Boots"
+            />
+            <h4>Apex Striker Football Boots</h4>
+            <p>Price Tag : $950</p>
+            <button>Add to Cart</button>
+          </div>
+          <div class="product-card">
+            <img
+              src="https://picsum.photos/200?random=2"
+              alt="Apex Precision Volleyball Shoes"
+            />
+            <h4>Apex Precision Volleyball Shoes</h4>
+            <p>Price Tag : $1,100</p>
+            <button>Add to Cart</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer><p>&copy; 2026 Apex Athletics. All rights reserved.</p></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

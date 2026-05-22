@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* NAV-BAR CSS */
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  color: #fff;
+}
+
+.nav-bar ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-bar a {
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* HERO SECTION CSS */
+.hero-section {
+  background-color: #222;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 80px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+
+.hero-section h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #ccc;
+}
+
+.hero-section p {
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-section button {
+  background-color: #fff;
+  color: #111;
+  border: none;
+  font-size: 1rem;
+  padding: 12px 30px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: ease 0.3s;
+  border-radius: 7px;
+}
+
+.hero-section button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+/* CATEGORY SECTION CSS */
+.category-section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.category-section h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  letter-spacing: 1px;
+}
+
+.category-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.category-container div {
+  background-color: #fff;
+  color: #111;
+  padding: 40px 20px;
+  width: 180px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+.category-container div:hover {
+  transform: translateY(-5px);
+  background-color: #111;
+  color: #fff;
+}
+
+/* PRODUCT GRID CSS  */
+.product-grid {
+  padding: 60px 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.product-grid h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.product-card p {
+  font-weight: bold;
+  color: #e67e22;
+  margin-bottom: 15px;
+}
+
+.product-card button {
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.product-card button:hover {
+  background-color: #e67e22;
+}
+
+/* FOOTER CSS */
+footer {
+  background-color: #111;
+  color: #777;
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  font-size: 0.9rem;
+  border-top: 1px solid #222;
+}
+
+/* Side bar  */
+.cart-sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  width: 400px;
+  height: 100vh;
+  background-color: #fff;
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  transition: right 0.3s ease;
+}
+
+.cart-sidebar.open {
+  right: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding: 20px;
+  color: #777;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+}
+
+.checkout-btn {
+  width: 100%;
+  background-color: #111;
+  color: #fff;
+  border: none;
+  padding: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
